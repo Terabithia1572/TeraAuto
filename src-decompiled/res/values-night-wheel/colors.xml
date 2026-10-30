@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="car_card_ripple_background">@color/car_controller_ripple_light</color>
+    <color name="car_ripple">@color/car_controller_ripple</color>
+</resources>

@@ -1,0 +1,63 @@
+.class public final synthetic Lme/aap/fermata/addon/f;
+.super Ljava/lang/Object;
+.source "r8-map-id-80f38517ab918cae591379b218d171fa255591f6c8fc0c5b1e23264e91b0dc5c"
+
+# interfaces
+.implements Lme/aap/utils/function/CheckedFunction;
+
+
+# instance fields
+.field public final synthetic a:Ljava/lang/String;
+
+.field public final synthetic b:Ljava/lang/StringBuilder;
+
+
+# direct methods
+.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/StringBuilder;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lme/aap/fermata/addon/f;->a:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lme/aap/fermata/addon/f;->b:Ljava/lang/StringBuilder;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lme/aap/fermata/addon/f;->b:Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    check-cast p1, Ljava/util/Map$Entry;
+
+    .line 4
+    .line 5
+    iget-object p0, p0, Lme/aap/fermata/addon/f;->a:Ljava/lang/String;
+
+    .line 6
+    .line 7
+    invoke-static {p0, v0, p1}, Lme/aap/fermata/addon/TranslateAddon$1;->h(Ljava/lang/String;Ljava/lang/StringBuilder;Ljava/util/Map$Entry;)Lme/aap/utils/async/FutureSupplier;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p0
+
+    .line 11
+    return-object p0
+.end method

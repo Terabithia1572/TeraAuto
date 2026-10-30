@@ -1,0 +1,109 @@
+.class public final synthetic Lnt0;
+.super Ljava/lang/Object;
+.source "r8-map-id-80f38517ab918cae591379b218d171fa255591f6c8fc0c5b1e23264e91b0dc5c"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Landroidx/fragment/app/Fragment;
+
+.field public final synthetic c:Landroid/os/Bundle;
+
+
+# direct methods
+.method public synthetic constructor <init>(Landroidx/fragment/app/Fragment;Landroid/os/Bundle;I)V
+    .locals 0
+
+    .line 1
+    iput p3, p0, Lnt0;->a:I
+
+    .line 2
+    .line 3
+    iput-object p1, p0, Lnt0;->b:Landroidx/fragment/app/Fragment;
+
+    .line 4
+    .line 5
+    iput-object p2, p0, Lnt0;->c:Landroid/os/Bundle;
+
+    .line 6
+    .line 7
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lnt0;->a:I
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lnt0;->c:Landroid/os/Bundle;
+
+    .line 4
+    .line 5
+    iget-object p0, p0, Lnt0;->b:Landroidx/fragment/app/Fragment;
+
+    .line 6
+    .line 7
+    packed-switch v0, :pswitch_data_0
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-virtual {p0, v1}, Landroidx/fragment/app/Fragment;->onViewStateRestored(Landroid/os/Bundle;)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+
+    .line 14
+    :pswitch_0
+    invoke-virtual {p0, v1}, Landroidx/fragment/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
+
+    .line 15
+    .line 16
+    .line 17
+    return-void
+
+    .line 18
+    :pswitch_1
+    invoke-virtual {p0, v1}, Landroidx/fragment/app/Fragment;->onCreate(Landroid/os/Bundle;)V
+
+    .line 19
+    .line 20
+    .line 21
+    return-void
+
+    .line 22
+    :pswitch_2
+    invoke-virtual {p0, v1}, Landroidx/fragment/app/Fragment;->onSaveInstanceState(Landroid/os/Bundle;)V
+
+    .line 23
+    .line 24
+    .line 25
+    return-void
+
+    .line 26
+    nop
+
+    .line 27
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method

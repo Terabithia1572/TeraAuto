@@ -1,0 +1,11 @@
+.class public interface abstract Lm11;
+.super Ljava/lang/Object;
+.source "r8-map-id-80f38517ab918cae591379b218d171fa255591f6c8fc0c5b1e23264e91b0dc5c"
+
+
+# virtual methods
+.method public abstract a()V
+.end method
+
+.method public abstract b(Landroid/net/Uri;Lrb0;Z)Z
+.end method

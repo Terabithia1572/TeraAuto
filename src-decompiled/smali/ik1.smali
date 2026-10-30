@@ -1,0 +1,72 @@
+.class public final synthetic Lik1;
+.super Ljava/lang/Object;
+.source "r8-map-id-80f38517ab918cae591379b218d171fa255591f6c8fc0c5b1e23264e91b0dc5c"
+
+# interfaces
+.implements Lme/aap/utils/function/ProgressiveResultConsumer;
+
+
+# instance fields
+.field public final synthetic a:Lme/aap/fermata/ui/view/MediaItemListViewAdapter;
+
+.field public final synthetic b:Lme/aap/fermata/media/lib/MediaLib$BrowsableItem;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lme/aap/fermata/ui/view/MediaItemListViewAdapter;Lme/aap/fermata/media/lib/MediaLib$BrowsableItem;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lik1;->a:Lme/aap/fermata/ui/view/MediaItemListViewAdapter;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lik1;->b:Lme/aap/fermata/media/lib/MediaLib$BrowsableItem;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;Ljava/lang/Throwable;II)V
+    .locals 6
+
+    .line 1
+    iget-object v1, p0, Lik1;->b:Lme/aap/fermata/media/lib/MediaLib$BrowsableItem;
+
+    .line 2
+    .line 3
+    move-object v2, p1
+
+    .line 4
+    check-cast v2, Ljava/util/List;
+
+    .line 5
+    .line 6
+    iget-object v0, p0, Lik1;->a:Lme/aap/fermata/ui/view/MediaItemListViewAdapter;
+
+    .line 7
+    .line 8
+    move-object v3, p2
+
+    .line 9
+    move v4, p3
+
+    .line 10
+    move v5, p4
+
+    .line 11
+    invoke-static/range {v0 .. v5}, Lme/aap/fermata/ui/view/MediaItemListViewAdapter;->l(Lme/aap/fermata/ui/view/MediaItemListViewAdapter;Lme/aap/fermata/media/lib/MediaLib$BrowsableItem;Ljava/util/List;Ljava/lang/Throwable;II)V
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+.end method

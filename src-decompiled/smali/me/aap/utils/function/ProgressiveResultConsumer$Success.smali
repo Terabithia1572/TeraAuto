@@ -1,0 +1,97 @@
+.class public interface abstract Lme/aap/utils/function/ProgressiveResultConsumer$Success;
+.super Ljava/lang/Object;
+.source "r8-map-id-80f38517ab918cae591379b218d171fa255591f6c8fc0c5b1e23264e91b0dc5c"
+
+# interfaces
+.implements Lme/aap/utils/function/Consumer;
+.implements Lme/aap/utils/function/BiConsumer;
+.implements Lme/aap/utils/function/ProgressiveResultConsumer;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lme/aap/utils/function/ProgressiveResultConsumer;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "Success"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lme/aap/utils/function/Consumer;",
+        "Lme/aap/utils/function/BiConsumer;",
+        "Lme/aap/utils/function/ProgressiveResultConsumer<",
+        "TT;>;"
+    }
+.end annotation
+
+
+# virtual methods
+.method public bridge synthetic accept(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 0
+
+    .line 13
+    check-cast p2, Ljava/lang/Throwable;
+
+    invoke-interface {p0, p1, p2}, Lme/aap/utils/function/ProgressiveResultConsumer$Success;->accept(Ljava/lang/Object;Ljava/lang/Throwable;)V
+
+    return-void
+.end method
+
+.method public accept(Ljava/lang/Object;Ljava/lang/Throwable;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Ljava/lang/Throwable;",
+            ")V"
+        }
+    .end annotation
+
+    if-nez p2, :cond_0
+
+    .line 12
+    invoke-interface {p0, p1}, Lme/aap/utils/function/Consumer;->accept(Ljava/lang/Object;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public accept(Ljava/lang/Object;Ljava/lang/Throwable;II)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Ljava/lang/Throwable;",
+            "II)V"
+        }
+    .end annotation
+
+    .line 1
+    if-nez p2, :cond_0
+
+    .line 2
+    .line 3
+    const p2, 0x7fffffff
+
+    .line 4
+    .line 5
+    .line 6
+    if-ne p3, p2, :cond_0
+
+    .line 7
+    .line 8
+    invoke-interface {p0, p1}, Lme/aap/utils/function/Consumer;->accept(Ljava/lang/Object;)V
+
+    .line 9
+    .line 10
+    .line 11
+    :cond_0
+    return-void
+.end method

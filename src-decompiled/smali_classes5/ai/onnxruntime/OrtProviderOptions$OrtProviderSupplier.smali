@@ -1,0 +1,22 @@
+.class public interface abstract Lai/onnxruntime/OrtProviderOptions$OrtProviderSupplier;
+.super Ljava/lang/Object;
+.source "r8-map-id-80f38517ab918cae591379b218d171fa255591f6c8fc0c5b1e23264e91b0dc5c"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lai/onnxruntime/OrtProviderOptions;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "OrtProviderSupplier"
+.end annotation
+
+.annotation runtime Ljava/lang/FunctionalInterface;
+.end annotation
+
+
+# virtual methods
+.method public abstract create()J
+.end method

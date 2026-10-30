@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@style/Theme.Utils.Base">
+        <item name="android:windowBackground">@drawable/app_background</item>
+        <item name="android:navigationBarColor">?colorPrimary</item>
+        <item name="android:forceDarkAllowed">true</item>
+        <item name="android:isLightTheme">false</item>
+        <item name="appControlPanelStyle">@style/AppTheme.ControlPanelStyle</item>
+        <item name="appEqualizerStyle">@style/AppTheme.EqualizerStyle</item>
+        <item name="appMediaItemStyle">@style/AppTheme.MediaItemStyle</item>
+        <item name="appSeekBarStyle">@style/AppTheme.SeekBarStyle</item>
+        <item name="appStreamProgressStyle">@style/AppTheme.StreamProgressStyle</item>
+        <item name="appVideoInfoStyle">@style/AppTheme.VideoInfoStyle</item>
+        <item name="cornerRadius">5.0dp</item>
+    </style>
+</resources>

@@ -1,0 +1,17 @@
+.class public interface abstract Landroidx/car/app/model/OnContentRefreshDelegate;
+.super Ljava/lang/Object;
+.source "r8-map-id-80f38517ab918cae591379b218d171fa255591f6c8fc0c5b1e23264e91b0dc5c"
+
+
+# annotations
+.annotation runtime Landroidx/car/app/annotations/CarProtocol;
+.end annotation
+
+.annotation runtime Landroidx/car/app/annotations/RequiresCarApi;
+    value = 0x5
+.end annotation
+
+
+# virtual methods
+.method public abstract sendContentRefreshRequested(Landroidx/car/app/OnDoneCallback;)V
+.end method

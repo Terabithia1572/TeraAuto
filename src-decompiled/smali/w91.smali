@@ -1,0 +1,11 @@
+.class public interface abstract Lw91;
+.super Ljava/lang/Object;
+.source "r8-map-id-80f38517ab918cae591379b218d171fa255591f6c8fc0c5b1e23264e91b0dc5c"
+
+# interfaces
+.implements Ly91;
+
+
+# virtual methods
+.method public abstract a(Lz91;Lr91;)V
+.end method

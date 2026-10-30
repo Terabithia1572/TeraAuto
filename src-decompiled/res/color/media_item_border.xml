@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="?colorSecondaryVariant" android:state_activated="true" />
+    <item android:state_selected="true" android:color="?boxStrokeColor" android:alpha="?alpha" />
+    <item android:state_focused="true" android:color="?colorAccent" />
+    <item android:state_selected="false" android:color="?boxStrokeColor" />
+</selector>
