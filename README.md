@@ -63,26 +63,43 @@ Google restricts Android Auto launchers by default to approved Play Store applic
 4. Check **Unknown sources** (enables sideloaded car apps).
 5. Ensure **Wireless Android Auto** is enabled if using wireless adapters.
 
-### 2. Sideloading via ADB (Recommended: Play Store Spoofing)
-To ensure Android Auto treats TeraAuto as an official store app, install via ADB with the Play Store installer identity:
+### 2. Zero-Touch Automated Installer (Recommended)
+You do **not** need to manually run commands or toggle hidden Android 13/14+ settings.
 
-```bash
-# Push APK to temporary storage on the phone
-adb push release/TeraAuto-v2.0.2-arm64-signed.apk /data/local/tmp/teraauto.apk
-
-# Install with Play Store installer package spoofing (-i "com.android.vending")
-adb shell pm install -i "com.android.vending" -r /data/local/tmp/teraauto.apk
-
-# Clean up
-adb shell rm /data/local/tmp/teraauto.apk
+**On Windows:**
+Simply connect your Android phone via USB and double-click:
+```bat
+Install-TeraAuto-To-Phone.bat
+```
+Or run via PowerShell:
+```powershell
+.\scripts\install_and_grant_teraauto.ps1
 ```
 
-### 3. Grant Restricted Settings (Android 13 / 14 / 15+)
-For **Tera Mirror** to simulate touch gestures on the car screen:
-1. Open **Settings** > **Apps** > **TeraAuto**.
-2. Tap the **three dots (⋮)** in the top-right corner.
-3. Select **Allow restricted settings** and confirm with your device biometric/PIN.
-4. Go to **Settings** > **Accessibility** > Turn ON **Tera Mirror Accessibility Service**.
+**What the zero-touch script automates:**
+- Pushes the signed APK to `/data/local/tmp/teraauto.apk`.
+- Spoofs Google Play Store installation (`pm install -i "com.android.vending"`), causing Android Auto to immediately trust all 3 apps without restrictions.
+- Automatically bypasses Android 13/14+ Restricted Settings via `appops set com.terabithia.teraauto ACCESS_RESTRICTED_SETTINGS allow`.
+- Grants `SYSTEM_ALERT_WINDOW`, `PROJECT_MEDIA`, `MANAGE_EXTERNAL_STORAGE`, and media runtime permissions.
+- Enables the Accessibility Service in Android Secure Settings (`com.terabithia.teraauto/me.aap.fermata.auto.AccessibilityEventDispatcherService`) so screen mirroring touch injection works out-of-the-box.
+
+---
+
+## 🖥️ PC Android Auto Desktop Head Unit (DHU) Testing
+
+Test TeraAuto directly on your PC screen using Google's Desktop Head Unit emulator:
+
+1. **Connect your phone** via USB with USB Debugging enabled.
+2. In Android Auto Developer Settings on your phone, tap the 3 dots > **Start head unit server**.
+3. On Windows, double-click:
+   ```bat
+   Launch-Desktop-Head-Unit.bat
+   ```
+   Or run:
+   ```powershell
+   .\scripts\launch_dhu.ps1 -Config "default_720p.ini"
+   ```
+4. The script automatically forwards `tcp:5277` and starts the emulator with the high-resolution profile.
 
 ---
 

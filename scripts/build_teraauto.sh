@@ -16,8 +16,18 @@ echo "================================================================="
 JAVA_CMD="${JAVA_HOME:+$JAVA_HOME/bin/java}"
 JAVA_CMD="${JAVA_CMD:-$(command -v java || true)}"
 APKTOOL_CMD="$(command -v apktool || true)"
+AAPT2_CMD="$(command -v aapt2 || true)"
+if [ -z "$AAPT2_CMD" ] && [ -n "$ANDROID_HOME" ]; then
+    AAPT2_CMD="$(find "$ANDROID_HOME/build-tools" -name aapt2 2>/dev/null | sort -V | tail -n 1 || true)"
+fi
 ZIPALIGN_CMD="$(command -v zipalign || true)"
+if [ -z "$ZIPALIGN_CMD" ] && [ -n "$ANDROID_HOME" ]; then
+    ZIPALIGN_CMD="$(find "$ANDROID_HOME/build-tools" -name zipalign 2>/dev/null | sort -V | tail -n 1 || true)"
+fi
 APKSIGNER_CMD="$(command -v apksigner || true)"
+if [ -z "$APKSIGNER_CMD" ] && [ -n "$ANDROID_HOME" ]; then
+    APKSIGNER_CMD="$(find "$ANDROID_HOME/build-tools" -name apksigner 2>/dev/null | sort -V | tail -n 1 || true)"
+fi
 
 mkdir -p build "$OUTPUT_DIR" keystore
 
@@ -41,15 +51,20 @@ fi
 
 echo "[1/4] Compiling modified sources with Apktool..."
 rm -f "$UNALIGNED_APK"
-apktool b "$SRC_DIR" -o "$UNALIGNED_APK"
+if [ -n "$AAPT2_CMD" ]; then
+    echo "  [+] Using AAPT2: $AAPT2_CMD"
+    apktool b --aapt "$AAPT2_CMD" "$SRC_DIR" -o "$UNALIGNED_APK"
+else
+    apktool b "$SRC_DIR" -o "$UNALIGNED_APK"
+fi
 
 echo "[2/4] Aligning APK (4-byte page-alignment for shared libraries)..."
 rm -f "$ALIGNED_APK"
-zipalign -p -f -v 4 "$UNALIGNED_APK" "$ALIGNED_APK"
+"${ZIPALIGN_CMD:-zipalign}" -p -f -v 4 "$UNALIGNED_APK" "$ALIGNED_APK"
 
 echo "[3/4] Signing APK with V1, V2, and V3 signatures..."
 rm -f "$FINAL_SIGNED_APK"
-apksigner sign \
+"${APKSIGNER_CMD:-apksigner}" sign \
     --ks "$KEYSTORE_PATH" \
     --ks-pass "pass:$KEYSTORE_PASS" \
     --ks-key-alias "$KEY_ALIAS" \
