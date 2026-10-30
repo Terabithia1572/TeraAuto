@@ -329,7 +329,7 @@
     move-result-object v0
 
     .line 5
-    const-string v1, "content://me.aap.fermata.auto.dear.google.why/addon/"
+    const-string v1, "content://com.terabithia.teraauto/addon/"
 
     .line 6
     .line 7
@@ -469,7 +469,7 @@
     move-result-object v0
 
     .line 5
-    const-string v1, "content://me.aap.fermata.auto.dear.google.why/image/"
+    const-string v1, "content://com.terabithia.teraauto/image/"
 
     .line 6
     .line 7
@@ -652,7 +652,7 @@
     move-result-object p2
 
     .line 11
-    const-string v0, "content://me.aap.fermata.auto.dear.google.why/image/"
+    const-string v0, "content://com.terabithia.teraauto/image/"
 
     .line 12
     .line 13
@@ -1064,7 +1064,7 @@
 
     .line 199
     :cond_6
-    const-string v0, "content://me.aap.fermata.auto.dear.google.why/addon/"
+    const-string v0, "content://com.terabithia.teraauto/addon/"
 
     .line 200
     .line 201

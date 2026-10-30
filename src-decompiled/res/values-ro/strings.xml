@@ -28,8 +28,8 @@
     <string name="abc_shareactionprovider_share_with_application">Trimite folosind %s</string>
     <string name="abc_toolbar_collapse_description">Restrânge</string>
     <string name="about">Despre</string>
-    <string name="about_html">"&lt;H1 align=center>Fermata Media Player&lt;/H1> &lt;p>Fermata Media Player este un player audio și video gratis, open source cu o interfață simplă și intuitivă.&lt;/p> &lt;p>&lt;b>Author:&lt;/b> Andrey Pavlenko&lt;/p> &lt;p>&lt;b>Versiune:&lt;/b> %1$s (%2$d)&lt;/p> &lt;p>&lt;b>Pagina principală:&lt;/b> &lt;a href=%3$s>%3$s&lt;/a>&lt;/p> "</string>
-    <string name="accessibility_dsc">Serviciul de accesibilitate este folosit de Fermata Mirror pentru a simula evenimentele ecranului tactil.</string>
+    <string name="about_html">"&lt;H1 align=center>TeraAuto Multimedia Engine&lt;/H1> &lt;p>TeraAuto Multimedia Engine este un player audio și video gratis, open source cu o interfață simplă și intuitivă.&lt;/p> &lt;p>&lt;b>Author:&lt;/b> Andrey Pavlenko&lt;/p> &lt;p>&lt;b>Versiune:&lt;/b> %1$s (%2$d)&lt;/p> &lt;p>&lt;b>Pagina principală:&lt;/b> &lt;a href=%3$s>%3$s&lt;/a>&lt;/p> "</string>
+    <string name="accessibility_dsc">Serviciul de accesibilitate este folosit de Tera Mirror pentru a simula evenimentele ecranului tactil.</string>
     <string name="action_activate_voice_ctrl">Activează controlul vocal</string>
     <string name="action_back_or_exit">Înapoi sau ieșire</string>
     <string name="action_cp_menu">Meniul panoului de control</string>

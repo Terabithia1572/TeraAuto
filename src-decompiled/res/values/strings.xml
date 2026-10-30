@@ -28,8 +28,8 @@
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="about">About</string>
-    <string name="about_html">"&lt;H1 align=center>Fermata Media Player&lt;/H1> &lt;p>Fermata Media Player is a free, open source audio and video player with a simple and intuitive interface.&lt;/p> &lt;p>&lt;b>Author:&lt;/b> Andrey Pavlenko&lt;/p> &lt;p>&lt;b>Version:&lt;/b> %1$s (%2$d)&lt;/p> &lt;p>&lt;b>Home page:&lt;/b> &lt;a href=%3$s>%3$s&lt;/a>&lt;/p> "</string>
-    <string name="accessibility_dsc">The accessibility service is used by Fermata Mirror to simulate touch screen events.</string>
+    <string name="about_html">"&lt;H1 align=center>TeraAuto Multimedia Engine&lt;/H1> &lt;p>TeraAuto Multimedia Engine is a free, open source audio and video player with a simple and intuitive interface.&lt;/p> &lt;p>&lt;b>Author:&lt;/b> Andrey Pavlenko&lt;/p> &lt;p>&lt;b>Version:&lt;/b> %1$s (%2$d)&lt;/p> &lt;p>&lt;b>Home page:&lt;/b> &lt;a href=%3$s>%3$s&lt;/a>&lt;/p> "</string>
+    <string name="accessibility_dsc">The accessibility service is used by Tera Mirror to simulate touch screen events.</string>
     <string name="action_activate_voice_ctrl">Activate voice control</string>
     <string name="action_back_or_exit">Back or exit</string>
     <string name="action_cp_menu">Control panel menu</string>
@@ -72,11 +72,11 @@
     <string name="androidx_startup">androidx.startup</string>
     <string name="app_name">@string/app_name_auto</string>
     <string name="app_name_auto">@string/app_name_auto_release</string>
-    <string name="app_name_auto_debug">Debug Fermata Auto</string>
-    <string name="app_name_auto_release">Fermata Auto</string>
+    <string name="app_name_auto_debug">Debug TeraAuto</string>
+    <string name="app_name_auto_release">TeraAuto</string>
     <string name="app_name_mobile">@string/app_name_mobile_release</string>
-    <string name="app_name_mobile_debug">Debug Fermata</string>
-    <string name="app_name_mobile_release">Fermata</string>
+    <string name="app_name_mobile_debug">Debug TeraAuto</string>
+    <string name="app_name_mobile_release">TeraAuto</string>
     <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="apply_to">Apply to</string>
     <string name="artist">Artist</string>
@@ -306,19 +306,19 @@ Please, restart the application."</string>
     <string name="media_projection_action_text">Start now</string>
     <string name="media_service_name">@string/media_service_name_auto</string>
     <string name="media_service_name_auto">@string/media_service_name_auto_release</string>
-    <string name="media_service_name_auto_debug">Debug Fermata Media Service</string>
-    <string name="media_service_name_auto_release">Fermata Media Service</string>
+    <string name="media_service_name_auto_debug">Debug Tera Media Service</string>
+    <string name="media_service_name_auto_release">Tera Media Service</string>
     <string name="media_service_name_mobile">@string/media_service_name_mobile_release</string>
     <string name="media_service_name_mobile_debug">@string/app_name_mobile_debug</string>
     <string name="media_service_name_mobile_release">@string/app_name_mobile_release</string>
     <string name="menu">Menu</string>
     <string name="minutes">Minutes</string>
     <string name="mirror_fs_service_name">@string/mirror_fs_service_name_release</string>
-    <string name="mirror_fs_service_name_debug">Debug FS Fermata Mirror</string>
-    <string name="mirror_fs_service_name_release">FS Fermata Mirror</string>
+    <string name="mirror_fs_service_name_debug">Debug FS Tera Mirror</string>
+    <string name="mirror_fs_service_name_release">FS Tera Mirror</string>
     <string name="mirror_service_name">@string/mirror_service_name_release</string>
-    <string name="mirror_service_name_debug">Debug Fermata Mirror</string>
-    <string name="mirror_service_name_release">Fermata Mirror</string>
+    <string name="mirror_service_name_debug">Debug Tera Mirror</string>
+    <string name="mirror_service_name_release">Tera Mirror</string>
     <string name="module_installation">Module installation: %1$s</string>
     <string name="module_name_gdrive">Google Drive</string>
     <string name="module_name_sftp">SFTP</string>

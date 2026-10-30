@@ -28,8 +28,8 @@
     <string name="abc_shareactionprovider_share_with_application">Поделиться с помощью %s</string>
     <string name="abc_toolbar_collapse_description">Свернуть</string>
     <string name="about">О приложении</string>
-    <string name="about_html">"&lt;H1 align=center>Fermata Media Player&lt;/H1> &lt;p>Fermata Media Player - это бесплатный, с открытым исходным кодом, аудио и видео плеер с простым и интуитивным интерфейсом.&lt;/p> &lt;p>&lt;b>Автор:&lt;/b> Андрей Павленко&lt;/p> &lt;p>&lt;b>Версия:&lt;/b> %1$s (%2$d)&lt;/p> &lt;p>&lt;b>Домашняя страница:&lt;/b> &lt;a href=%3$s>%3$s&lt;/a>&lt;/p> "</string>
-    <string name="accessibility_dsc">Эта служба используется Fermata Mirror для взаимодействия с экраном телефона.</string>
+    <string name="about_html">"&lt;H1 align=center>TeraAuto Multimedia Engine&lt;/H1> &lt;p>TeraAuto Multimedia Engine - это бесплатный, с открытым исходным кодом, аудио и видео плеер с простым и интуитивным интерфейсом.&lt;/p> &lt;p>&lt;b>Автор:&lt;/b> Андрей Павленко&lt;/p> &lt;p>&lt;b>Версия:&lt;/b> %1$s (%2$d)&lt;/p> &lt;p>&lt;b>Домашняя страница:&lt;/b> &lt;a href=%3$s>%3$s&lt;/a>&lt;/p> "</string>
+    <string name="accessibility_dsc">Эта служба используется Tera Mirror для взаимодействия с экраном телефона.</string>
     <string name="action_activate_voice_ctrl">Активировать голосовое управление</string>
     <string name="action_back_or_exit">Назад или выход</string>
     <string name="action_cp_menu">Панель управления</string>

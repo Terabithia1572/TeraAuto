@@ -228,7 +228,7 @@
 
     .line 10
     .line 11
-    const-string p0, "Fermata/2.0.2"
+    const-string p0, "TeraAuto/2.0.2"
 
     .line 12
     .line 13

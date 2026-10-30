@@ -29,7 +29,7 @@
     <string name="abc_toolbar_collapse_description">បង្រួម</string>
     <string name="about">អំពី</string>
     <string name="about_html" formatted="false">&lt;H1 តម្រឹម = \"មជ្ឈមណ្ឌល\"> កម្មវិធីចាក់មេឌៀហ្វឺម៉ាហ្គាតា &lt;/ h1> &lt;p> អ្នកលេងមេឌៀហ្វូម៉ាតាគឺជាកម្មវិធីចាក់អូឌីយ៉ូប្រភពនិងវីដេអូឥតគិតថ្លៃដែលមានលក្ខណៈសាមញ្ញនិង ចំណុចប្រទាក់វិចារណញាណ។ &lt;/ p> &lt;p> &lt;b> អ្នកនិពន្ធ: &lt;/ b> andrey pavlenko &lt;/ p> &lt;p> &lt;p> ព្រីនៈ &lt;/ b>% 1 $ s (% 2 $ d) &lt;/ p> &lt;p> &lt;b> ទំព័រដើម: &lt;/ b> &lt;A HREF = \"% 3 $ s\">% 3 $ s &lt;/a> &lt;/ p></string>
-    <string name="accessibility_dsc">សេវាកម្ម​មធ្យោបាយ​ងាយស្រួល​ត្រូវ​បាន​ប្រើ​ដោយ Fermata Mirror ដើម្បី​ក្លែង​ធ្វើ​ព្រឹត្តិការណ៍​ប៉ះ​លើ​អេក្រង់។</string>
+    <string name="accessibility_dsc">សេវាកម្ម​មធ្យោបាយ​ងាយស្រួល​ត្រូវ​បាន​ប្រើ​ដោយ Tera Mirror ដើម្បី​ក្លែង​ធ្វើ​ព្រឹត្តិការណ៍​ប៉ះ​លើ​អេក្រង់។</string>
     <string name="action_activate_voice_ctrl">បើកដំណើរការពាក្យបញ្ជាសំឡេង</string>
     <string name="action_back_or_exit">ថយ​ក្រោយ ឬ​ចេញ</string>
     <string name="action_cp_menu">ម៉ឺនុយ​ផ្ទាំង​បញ្ជា</string>

@@ -28,7 +28,7 @@
     <string name="abc_shareactionprovider_share_with_application">مشاركة مع %s</string>
     <string name="abc_toolbar_collapse_description">تصغير</string>
     <string name="about">عن التطبيق</string>
-    <string name="about_html">" &lt;H1 align=center>Fermata Media Player&lt;/H1> &lt;p>Fermata Media Player is a free, open source audio and video player with a simple and intuitive interface.&lt;/p> &lt;p>&lt;b>Author:&lt;/b> Andrey Pavlenko&lt;/p> &lt;p>&lt;b>Version:&lt;/b> %1$s (%2$d)&lt;/p> &lt;p>&lt;b>Home page:&lt;/b> &lt;a href=%3$s>%3$s&lt;/a>&lt;/p> "</string>
+    <string name="about_html">" &lt;H1 align=center>TeraAuto Multimedia Engine&lt;/H1> &lt;p>TeraAuto Multimedia Engine is a free, open source audio and video player with a simple and intuitive interface.&lt;/p> &lt;p>&lt;b>Author:&lt;/b> Andrey Pavlenko&lt;/p> &lt;p>&lt;b>Version:&lt;/b> %1$s (%2$d)&lt;/p> &lt;p>&lt;b>Home page:&lt;/b> &lt;a href=%3$s>%3$s&lt;/a>&lt;/p> "</string>
     <string name="accessibility_dsc">منح الوصول للتطبيق للإستفادة من التحكم بالشاشة باللمس</string>
     <string name="action_activate_voice_ctrl">تفعيل التحكم الصوتي</string>
     <string name="action_back_or_exit">العودة أو الخروج</string>

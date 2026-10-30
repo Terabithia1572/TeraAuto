@@ -324,7 +324,7 @@
 
     .line 27
     .line 28
-    const-string v1, "me.aap.fermata.auto.dear.google.why"
+    const-string v1, "com.terabithia.teraauto"
 
     .line 29
     .line 30

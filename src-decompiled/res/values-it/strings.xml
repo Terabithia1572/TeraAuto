@@ -28,8 +28,8 @@
     <string name="abc_shareactionprovider_share_with_application">Condividi tramite %s</string>
     <string name="abc_toolbar_collapse_description">Comprimi</string>
     <string name="about">Info</string>
-    <string name="about_html">"&lt;H1 align=center>Fermata Media Player&lt;/H1> &lt;p>Fermata Media Player è un riproduttore audio e video gratuito, open source con un'interfaccia semplice ed intuitiva.&lt;/p> &lt;p>&lt;b>Autore:&lt;/b> Andrey Pavlenko&lt;/p> &lt;p>&lt;b>Versione:&lt;/b> %1$s (%2$d)&lt;/p> &lt;p>&lt;b>Sito web:&lt;/b> &lt;a href=%3$s>%3$s&lt;/a>&lt;/p> "</string>
-    <string name="accessibility_dsc">Il servizio di accessibilità viene utilizzato da Fermata Mirror per simulare eventi touch screen.</string>
+    <string name="about_html">"&lt;H1 align=center>TeraAuto Multimedia Engine&lt;/H1> &lt;p>TeraAuto Multimedia Engine è un riproduttore audio e video gratuito, open source con un'interfaccia semplice ed intuitiva.&lt;/p> &lt;p>&lt;b>Autore:&lt;/b> Andrey Pavlenko&lt;/p> &lt;p>&lt;b>Versione:&lt;/b> %1$s (%2$d)&lt;/p> &lt;p>&lt;b>Sito web:&lt;/b> &lt;a href=%3$s>%3$s&lt;/a>&lt;/p> "</string>
+    <string name="accessibility_dsc">Il servizio di accessibilità viene utilizzato da Tera Mirror per simulare eventi touch screen.</string>
     <string name="action_activate_voice_ctrl">Attiva controllo vocale</string>
     <string name="action_back_or_exit">Indietro o esci</string>
     <string name="action_cp_menu">Pannello controllo menu</string>

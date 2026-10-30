@@ -28,8 +28,8 @@
     <string name="abc_shareactionprovider_share_with_application">Udostępnij przez: %s</string>
     <string name="abc_toolbar_collapse_description">Zwiń</string>
     <string name="about">O programie</string>
-    <string name="about_html">"&lt;H1 align=center>Fermata Media Player&lt;/H1> &lt;p>Fermata Media Player to darmowy odtwarzacz audio i wideo typu open source z prostym i intuicyjny interfejsem.&lt;/p> &lt;p>&lt;b>Author:&lt;/b> Andrey Pavlenko&lt;/p> &lt;p>&lt;b>Version:&lt;/b> %1$s (%2$d)&lt;/p> &lt;p>&lt;b>Home page:&lt;/b> &lt;a href=%3$s>%3$s&lt;/a>&lt;/p> "</string>
-    <string name="accessibility_dsc">Usługa dostępności jest wykorzystywana przez Fermata Mirror do symulacji zdarzeń na ekranie dotykowym.</string>
+    <string name="about_html">"&lt;H1 align=center>TeraAuto Multimedia Engine&lt;/H1> &lt;p>TeraAuto Multimedia Engine to darmowy odtwarzacz audio i wideo typu open source z prostym i intuicyjny interfejsem.&lt;/p> &lt;p>&lt;b>Author:&lt;/b> Andrey Pavlenko&lt;/p> &lt;p>&lt;b>Version:&lt;/b> %1$s (%2$d)&lt;/p> &lt;p>&lt;b>Home page:&lt;/b> &lt;a href=%3$s>%3$s&lt;/a>&lt;/p> "</string>
+    <string name="accessibility_dsc">Usługa dostępności jest wykorzystywana przez Tera Mirror do symulacji zdarzeń na ekranie dotykowym.</string>
     <string name="action_activate_voice_ctrl">Aktywuj sterowanie głosowe</string>
     <string name="action_back_or_exit">Wróć lub wyjdź</string>
     <string name="action_cp_menu">Menu panelu sterowania</string>

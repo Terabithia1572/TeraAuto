@@ -496,7 +496,7 @@
 
     .line 54
     .line 55
-    const-string v3, "me.aap.fermata.auto.dear.google.why"
+    const-string v3, "com.terabithia.teraauto"
 
     .line 56
     .line 57

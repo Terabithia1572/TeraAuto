@@ -8,7 +8,7 @@
     .locals 7
 
     .line 1
-    const-string v0, "Fermata/2.0.2"
+    const-string v0, "TeraAuto/2.0.2"
 
     .line 2
     .line 3

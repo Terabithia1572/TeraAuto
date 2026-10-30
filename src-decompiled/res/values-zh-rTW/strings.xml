@@ -28,8 +28,8 @@
     <string name="abc_shareactionprovider_share_with_application">與「%s」分享</string>
     <string name="abc_toolbar_collapse_description">收合</string>
     <string name="about">關於</string>
-    <string name="about_html">"&lt;H1 align=center>Fermata Media Player&lt;/H1> &lt;p>Fermata Media Player is a free, open source audio and video player with a simple and intuitive interface.&lt;/p> &lt;p>&lt;b>Author:&lt;/b> Andrey Pavlenko&lt;/p> &lt;p>&lt;b>Version:&lt;/b> %1$s (%2$d)&lt;/p> &lt;p>&lt;b>Home page:&lt;/b> &lt;a href=%3$s>%3$s&lt;/a>&lt;/p> "</string>
-    <string name="accessibility_dsc">Fermata Mirror使用無障礙功能進行螢幕觸控模擬</string>
+    <string name="about_html">"&lt;H1 align=center>TeraAuto Multimedia Engine&lt;/H1> &lt;p>TeraAuto Multimedia Engine is a free, open source audio and video player with a simple and intuitive interface.&lt;/p> &lt;p>&lt;b>Author:&lt;/b> Andrey Pavlenko&lt;/p> &lt;p>&lt;b>Version:&lt;/b> %1$s (%2$d)&lt;/p> &lt;p>&lt;b>Home page:&lt;/b> &lt;a href=%3$s>%3$s&lt;/a>&lt;/p> "</string>
+    <string name="accessibility_dsc">Tera Mirror使用無障礙功能進行螢幕觸控模擬</string>
     <string name="action_activate_voice_ctrl">啟動語音控制</string>
     <string name="action_back_or_exit">退出或關閉</string>
     <string name="action_cp_menu">控制功能表單</string>

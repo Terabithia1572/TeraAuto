@@ -215,7 +215,7 @@
 
     .line 13
     .line 14
-    const-string v2, "Fermata"
+    const-string v2, "TeraAuto"
 
     .line 15
     .line 16
@@ -1244,7 +1244,7 @@
     move-result-object v2
 
     .line 301
-    const-string v13, "Fermata"
+    const-string v13, "TeraAuto"
 
     .line 302
     .line 303

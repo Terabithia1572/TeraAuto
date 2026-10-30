@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final APPLICATION_ID:Ljava/lang/String; = "me.aap.fermata.auto.dear.google.why"
+.field public static final APPLICATION_ID:Ljava/lang/String; = "com.terabithia.teraauto"
 
 .field public static final BUILD_TYPE:Ljava/lang/String; = "release"
 

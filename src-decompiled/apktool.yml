@@ -1,4 +1,4 @@
-version: 3.0.3
+﻿version: 3.0.3
 apkFileName: fermata-auto-2.0.2-arm64.apk
 usesFramework:
   ids:
@@ -22,3 +22,5 @@ doNotCompress:
 - assets/xposed_init
 - car-app-api.level
 - com/google/api/client/http/google-http-client.properties
+
+renameManifestPackage: com.terabithia.teraauto

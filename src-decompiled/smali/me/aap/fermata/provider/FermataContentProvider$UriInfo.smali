@@ -80,7 +80,7 @@
     .locals 7
 
     .line 1
-    const-string v0, "content://me.aap.fermata.auto.dear.google.why/image/"
+    const-string v0, "content://com.terabithia.teraauto/image/"
 
     .line 2
     .line 3
@@ -96,7 +96,7 @@
 
     .line 8
     .line 9
-    const/16 v3, 0x34
+    const/16 v3, 0x27
 
     .line 10
     .line 11
@@ -149,7 +149,7 @@
 
     .line 35
     :cond_0
-    const-string v0, "content://me.aap.fermata.auto.dear.google.why/addon/"
+    const-string v0, "content://com.terabithia.teraauto/addon/"
 
     .line 36
     .line 37

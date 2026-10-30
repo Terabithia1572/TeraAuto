@@ -2509,7 +2509,7 @@
     .line 56
     .line 57
     .line 58
-    const-string v4, "Fermata:ScreenLock"
+    const-string v4, "TeraAuto:ScreenLock"
 
     .line 59
     .line 60
