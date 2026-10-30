@@ -1,0 +1,33 @@
+# Build outputs & temporaries
+build/
+bin/
+out/
+*.apksig
+*.idsig
+
+# Raw binary APKs (>100MB exceeds GitHub push limits; distributed via GitHub Releases)
+*.apk
+!original/.gitkeep
+!release/.gitkeep
+
+# Keystores & sensitive credentials
+*.jks
+*.keystore
+keystore/*.jks
+keystore/*.p12
+*.key
+*.pem
+credentials.json
+
+# Local tools & caches
+tools/
+.gradle/
+.idea/
+.vscode/
+*.log
+*.tmp
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
