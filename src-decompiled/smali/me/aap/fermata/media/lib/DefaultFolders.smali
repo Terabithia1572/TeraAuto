@@ -2225,19 +2225,27 @@
     .line 5
     invoke-interface {p0}, Lme/aap/fermata/media/pref/FoldersPrefs;->getFoldersPref()[Ljava/lang/String;
 
-    .line 6
-    .line 7
-    .line 8
     move-result-object v1
 
-    .line 9
-    new-instance v2, Ljava/util/ArrayList;
-
-    .line 10
-    .line 11
     array-length v3, v1
 
-    .line 12
+    if-nez v3, :cond_tera_fld
+
+    invoke-static {}, Lme/aap/fermata/FermataApplication;->get()Lme/aap/fermata/FermataApplication;
+
+    move-result-object v3
+
+    invoke-static {v3}, Lme/aap/fermata/util/TeraPlaylistProvisioner;->ensureProvisioned(Landroid/content/Context;)V
+
+    invoke-interface {p0}, Lme/aap/fermata/media/pref/FoldersPrefs;->getFoldersPref()[Ljava/lang/String;
+
+    move-result-object v1
+
+    :cond_tera_fld
+    new-instance v2, Ljava/util/ArrayList;
+
+    array-length v3, v1
+
     invoke-direct {v2, v3}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 13

@@ -2349,6 +2349,8 @@
     .line 45
     .line 46
     .line 47
+    invoke-static {p0}, Lme/aap/fermata/util/TeraPlaylistProvisioner;->ensureProvisioned(Landroid/content/Context;)V
+
     return-void
 .end method
 

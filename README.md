@@ -73,6 +73,40 @@ Modern Android Auto head units often route physical steering wheel button events
 
 ---
 
+## 📺 Pre-Configured Turkish National TV & Radio Suite (Out-of-the-Box)
+
+TeraAuto comes pre-provisioned with a curated, high-uptime **Turkish National Television & Radio IPTV Suite** embedded directly into the application (`playlists/tera_turkiye_tv_radyo.m3u`). All streams are categorized with custom channel logos, group titles, and EPG mapping:
+
+```
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│                        TÜRKİYE TV & RADYO OYNATMA LİSTESİ                              │
+├────────────────────┬────────────────────┬────────────────────┬─────────────────────────┤
+│   Ulusal TV (12)   │ Haber & Eko (12)   │ Spor & Belgesel(10)│ Türkiye Radyoları (16)  │
+├────────────────────┼────────────────────┼────────────────────┼─────────────────────────┤
+│ • TRT 1 HD         │ • TRT Haber HD     │ • TRT Spor HD      │ • TRT FM / Türkü / Nağme│
+│ • ATV HD           │ • NTV HD           │ • TRT Spor Yıldız  │ • Kral FM / Kral Pop    │
+│ • Kanal D HD       │ • CNN Türk HD      │ • A Spor HD        │ • PowerTürk / Power FM  │
+│ • Star TV HD       │ • Habertürk HD     │ • FB TV            │ • Süper FM / Metro FM   │
+│ • Show TV HD       │ • A Haber HD       │ • Sports TV HD     │ • JoyTurk / Akustik     │
+│ • NOW TV HD        │ • Halk TV HD       │ • TRT Belgesel HD  │ • Best FM / Alem FM     │
+│ • TV8 HD           │ • Sözcü TV HD      │ • Yaban TV         │ • Radyo Fenomen         │
+│ • Kanal 7 HD       │ • TGRT Haber HD    │ • TRT Avaz HD      │ • Virgin Radio Türkiye  │
+│ • Beyaz TV / Teve2 │ • Ülke TV HD       │ • TRT Kurdî HD     │ • Kafa Radyo            │
+│ • TLC / DMAX       │ • Bloomberg HT     │ • TRT Çocuk HD     │                         │
+│                    │ • TV100 / 24 TV    │                    │ + Müzik TV (7 Kanallar) │
+└────────────────────┴────────────────────┴────────────────────┴─────────────────────────┘
+```
+
+### 🚀 Zero-Configuration Provisioning
+1. **In-App Bootstrap (Option A):** On first launch, TeraAuto's internal `TeraPlaylistProvisioner` verifies internal storage. If no playlist exists, it extracts `assets/tera_turkiye_tv_radyo.m3u` to `/data/data/com.terabithia.teraauto/files/` and automatically registers it in the `FOLDERS` preference.
+2. **Zero-Touch ADB Provisioning (Option B):** Running `Install-TeraAuto-To-Phone.bat` automatically pushes the playlist to `/sdcard/Download/TeraAuto/Tera_Turkiye_TV_Radyo.m3u`.
+3. **Live Remote Updates:** You can also add or sync the raw playlist directly inside TeraAuto via URL:
+   ```
+   https://raw.githubusercontent.com/Terabithia1572/TeraAuto/main/playlists/tera_turkiye_tv_radyo.m3u
+   ```
+
+---
+
 ## 🛠️ Architecture & Reverse Engineering Integrity
 
 During reverse engineering analysis via `morluto/rea`:

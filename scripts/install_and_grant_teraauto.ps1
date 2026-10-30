@@ -181,10 +181,24 @@ foreach ($perm in $ctrlRuntime) {
     Write-Host "  [+] Granted $perm to TeraControl" -ForegroundColor Gray
 }
 
+# -------------------------------------------------------------
+# 8. Pre-Populate Turkish National TV & Radio M3U Suite
+# -------------------------------------------------------------
+Write-Host "`n[*] Provisioning Turkish National TV & Radio IPTV Suite..." -ForegroundColor Cyan
+$m3uPath = Join-Path $rootDir "playlists\tera_turkiye_tv_radyo.m3u"
+if (Test-Path $m3uPath) {
+    $null = Invoke-AdbShell "mkdir -p /sdcard/Download/TeraAuto"
+    & $adb -s $targetDevice push $m3uPath /sdcard/Download/TeraAuto/Tera_Turkiye_TV_Radyo.m3u
+    if ($LASTEXITCODE -eq 0) {
+        Write-Host "  [+] Pushed Turkish IPTV playlist to /sdcard/Download/TeraAuto/Tera_Turkiye_TV_Radyo.m3u" -ForegroundColor Green
+    }
+}
+
 Write-Host "`n=================================================================" -ForegroundColor Green
 Write-Host "  INSTALLATION AND PROVISIONING COMPLETE!" -ForegroundColor Green
 Write-Host "  - TeraAuto: Multimedia player, YouTube, IPTV & Tera Mirror ready." -ForegroundColor Green
 Write-Host "  - TeraControl: Steering wheel media keys & notification sync ready." -ForegroundColor Green
+Write-Host "  - Turkish IPTV: Pre-loaded out-of-the-box (Ulusal TV, Haber, Spor, Muzik, Radyolar)." -ForegroundColor Green
 Write-Host "  - Package Spoofing: Both installed via com.android.vending." -ForegroundColor Green
 Write-Host "  - Shared Signature: Cross-package IPC authorized." -ForegroundColor Green
 Write-Host "=================================================================" -ForegroundColor Green

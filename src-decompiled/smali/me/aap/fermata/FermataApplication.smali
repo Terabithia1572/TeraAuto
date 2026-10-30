@@ -530,6 +530,8 @@
     .line 1
     invoke-super {p0}, Lme/aap/utils/app/App;->onCreate()V
 
+    invoke-static {p0}, Lme/aap/fermata/util/TeraPlaylistProvisioner;->ensureProvisioned(Landroid/content/Context;)V
+
     .line 2
     .line 3
     .line 4
