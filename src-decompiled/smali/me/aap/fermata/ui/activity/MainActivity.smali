@@ -1388,7 +1388,7 @@
     .locals 1
 
     .line 1
-    const-string v0, "https://api.github.com/repos/AndreyPavlenko/Fermata/releases/latest"
+    const-string v0, "https://api.github.com/repos/Terabithia1572/TeraAuto/releases/latest"
 
     .line 2
     .line 3

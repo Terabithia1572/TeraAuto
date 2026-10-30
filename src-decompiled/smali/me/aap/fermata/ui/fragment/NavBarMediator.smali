@@ -549,7 +549,7 @@
 
     .line 19
     .line 20
-    const-string v5, "https://github.com/AndreyPavlenko/Fermata"
+    const-string v5, "https://github.com/Terabithia1572/TeraAuto"
 
     .line 21
     .line 22
@@ -1053,7 +1053,7 @@
     .locals 1
 
     .line 1
-    const-string v0, "https://github.com/AndreyPavlenko/Fermata"
+    const-string v0, "https://github.com/Terabithia1572/TeraAuto"
 
     .line 2
     .line 3

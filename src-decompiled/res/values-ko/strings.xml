@@ -28,7 +28,7 @@
     <string name="abc_shareactionprovider_share_with_application">%s과(와) 공유</string>
     <string name="abc_toolbar_collapse_description">접기</string>
     <string name="about">앱정보</string>
-    <string name="about_html">"&lt;H1 align=center>TeraAuto Multimedia Engine&lt;/H1> &lt;p>TeraAuto Multimedia Engine (페르마타 미디어 플레이어)는 간결하고 직관적인 무료 오픈소스 오디오, 비디오 플레이어 입니다.&lt;/p> &lt;p>&lt;b>제작자:&lt;/b> Andrey Pavlenko&lt;/p> &lt;p>&lt;b>앱버전:&lt;/b> %1$s (%2$d)&lt;/p> &lt;p>&lt;b>홈페이지:&lt;/b> &lt;a href=%3$s>%3$s&lt;/a>&lt;/p> "</string>
+    <string name="about_html">"&lt;H1 align=center>TeraAuto Multimedia &amp; Mirroring Suite v2.0.2&lt;/H1> &lt;p>TeraAuto is an advanced multimedia, YouTube, IPTV player, and screen mirroring suite for Android and Android Auto.&lt;/p> &lt;p>&lt;b>Author:&lt;/b> Built by Terabithia1572&lt;/p> &lt;p>&lt;b>Version:&lt;/b> %1$s (%2$d)&lt;/p> &lt;p>&lt;b>GitHub:&lt;/b> &lt;a href=%3$s>%3$s&lt;/a>&lt;/p> "</string>
     <string name="accessibility_dsc">접근성 서비스는 Tera Mirror에 의해 터치스크린을 시뮬레이션하기 위해 사용됩니다.</string>
     <string name="action_activate_voice_ctrl">음성명령 활성화</string>
     <string name="action_back_or_exit">뒤로 혹은 나가기</string>

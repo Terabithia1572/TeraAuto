@@ -28,7 +28,7 @@
     <string name="abc_shareactionprovider_share_with_application">Compartilhar com %s</string>
     <string name="abc_toolbar_collapse_description">Recolher</string>
     <string name="about">Sobre</string>
-    <string name="about_html">"&lt;H1 align=center>Fermata Leitor de Multimédia&lt;/H1> &lt;p>Fermata Leitor de Multimédia é gratuito, de código aberto para audio e video, com uma interface simples e intuitiva.&lt;/p> &lt;p>&lt;b>Autor:&lt;/b> Andrey Pavlenko&lt;/p> &lt;p>&lt;b>Versão:&lt;/b> %1$s (%2$d)&lt;/p> &lt;p>&lt;b>Página Inicial:&lt;/b> &lt;a href=%3$s>%3$s&lt;/a>&lt;/p> "</string>
+    <string name="about_html">"&lt;H1 align=center>TeraAuto Multimedia &amp; Mirroring Suite v2.0.2&lt;/H1> &lt;p>TeraAuto is an advanced multimedia, YouTube, IPTV player, and screen mirroring suite for Android and Android Auto.&lt;/p> &lt;p>&lt;b>Author:&lt;/b> Built by Terabithia1572&lt;/p> &lt;p>&lt;b>Version:&lt;/b> %1$s (%2$d)&lt;/p> &lt;p>&lt;b>GitHub:&lt;/b> &lt;a href=%3$s>%3$s&lt;/a>&lt;/p> "</string>
     <string name="accessibility_dsc">O serviço de acessibilidade é utilizado pelo Tera Mirror para simular eventos de tela sensível ao toque.</string>
     <string name="action_activate_voice_ctrl">Activate voice control</string>
     <string name="action_back_or_exit">Voltar ou Sair</string>
