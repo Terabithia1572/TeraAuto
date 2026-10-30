@@ -1369,7 +1369,7 @@
     .locals 1
 
     .line 1
-    const-string v0, "me.aap.fermata.auto.control.dear.google.why"
+    const-string v0, "com.terabithia.teracontrol"
 
     .line 2
     .line 3
@@ -2554,7 +2554,7 @@
     .end annotation
 
     .line 1
-    const-string v0, "me.aap.fermata.auto.control.dear.google.why"
+    const-string v0, "com.terabithia.teracontrol"
 
     .line 2
     .line 3

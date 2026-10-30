@@ -1,9 +1,9 @@
 @echo off
 setlocal
-title TeraAuto - Phone Installer & Permission Provisioner
+title TeraAuto ^& TeraControl - Phone Installer ^& Setup
 
 echo ================================================================
-echo    TeraAuto Zero-Touch Phone Installer & Permission Setup
+echo    TeraAuto ^& TeraControl Zero-Touch Phone Installer
 echo ================================================================
 echo.
 

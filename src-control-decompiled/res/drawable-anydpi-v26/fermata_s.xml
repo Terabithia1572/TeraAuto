@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="108.0dp" android:width="108.0dp" android:viewportWidth="108.0" android:viewportHeight="108.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer Steering Wheel Rim -->
+    <path android:fillColor="#00000000" android:strokeColor="#00e5ff" android:strokeWidth="5.5"
+          android:pathData="M54,18 A36,36 0 1,1 53.99,18 Z" />
+    <!-- Inner Steering Hub -->
+    <path android:fillColor="#2200e5ff" android:strokeColor="#00e5ff" android:strokeWidth="2.5"
+          android:pathData="M54,38 A16,16 0 1,1 53.99,38 Z" />
+    <!-- Left Spoke -->
+    <path android:fillColor="#00000000" android:strokeColor="#00e5ff" android:strokeWidth="4.0"
+          android:pathData="M18,54 L38,54" />
+    <!-- Right Spoke -->
+    <path android:fillColor="#00000000" android:strokeColor="#00e5ff" android:strokeWidth="4.0"
+          android:pathData="M70,54 L90,54" />
+    <!-- Bottom Spoke -->
+    <path android:fillColor="#00000000" android:strokeColor="#00e5ff" android:strokeWidth="4.0"
+          android:pathData="M54,70 L54,90" />
+    <!-- Steering Wheel Left/Right Media Key Nodes -->
+    <path android:fillColor="#ffffff"
+          android:pathData="M28,48 A3,3 0 1,1 27.99,48 Z" />
+    <path android:fillColor="#ffffff"
+          android:pathData="M80,48 A3,3 0 1,1 79.99,48 Z" />
+    <!-- Center Media Play Triangle -->
+    <path android:fillColor="#ffffff"
+          android:pathData="M48,46 L64,54 L48,62 Z" />
+</vector>

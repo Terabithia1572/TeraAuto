@@ -34,6 +34,7 @@
         </intent>
         <provider android:authorities="androidx.car.app.connection" android:name="androidx.car.app.connection.provider"/>
         <package android:name="com.google.android.gms.policy_cast_dynamite"/>
+        <package android:name="com.terabithia.teracontrol"/>
     </queries>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -861,6 +862,7 @@
             </intent-filter>
             <intent-filter>
                 <action android:name="me.aap.fermata.action.MediaService"/>
+                <action android:name="me.aap.fermata.action.ControlService"/>
             </intent-filter>
         </service>
         <service android:exported="false" android:name="me.aap.fermata.service.SpeechRecognitionService" android:permission="android.permission.BIND_VOICE_INTERACTION">

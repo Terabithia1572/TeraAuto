@@ -5,29 +5,29 @@
 [![Architecture](https://img.shields.io/badge/Arch-arm64--v8a-blueviolet)](#)
 [![License](https://img.shields.io/badge/License-GPLv3-success)](LICENSE)
 
-**TeraAuto** is an advanced, fully rebranded and modernized multimedia, streaming, and smartphone mirroring suite engineered specifically for **Android Auto** (head units, DHU, and Automotive OS). Built from the robust baseline of Fermata Auto 2.0.2 via the [REA (Reverse Engineering Assistant)](https://github.com/morluto/rea) methodology, TeraAuto features an updated application namespace (`com.terabithia.teraauto`), sleek Cyber-Obsidian UI with electric cyan highlights, distinct vector adaptive launcher icons, and zero conflicts with upstream packages.
+**TeraAuto** is an advanced, fully rebranded and modernized multimedia, streaming, and smartphone mirroring suite engineered specifically for **Android Auto** (head units, DHU, and Automotive OS). Built from the robust baseline of Fermata Auto 2.0.2 via the [REA (Reverse Engineering Assistant)](https://github.com/morluto/rea) methodology, TeraAuto features an updated application namespace (`com.terabithia.teraauto`), sleek Cyber-Obsidian UI with electric cyan highlights, distinct vector adaptive launcher icons, zero conflicts with upstream packages, and a dedicated steering wheel media key companion: **TeraControl** (`com.terabithia.teracontrol`).
 
 ---
 
 ## 🌟 Modules & Features
 
-TeraAuto registers three standalone, distinct application entry points into the Android Auto launcher:
+TeraAuto and its companion engine register distinct, dedicated application entry points:
 
 ```
-┌────────────────────────────────────────────────────────────────────────┐
-│                        TERAAUTO SUITE LAUNCHER                         │
-├────────────────────┬──────────────────────────┬────────────────────────┤
-│     TeraAuto       │       Tera Mirror        │     FS Tera Mirror     │
-│   [Media Hub]      │   [Standard Mirroring]   │  [Fullscreen Mirror]   │
-│                    │                          │                        │
-│ • Local Audio/Video│ • Phone Screen Cast      │ • Native CarAppService │
-│ • YouTube + AdBlock│ • Automotive Display Sync│ • Fullscreen 16:9 / UW │
-│ • IPTV M3U/M3U8    │ • Touch Input Injection  │ • Zero Letterboxing    │
-│ • Web & AI Whisper │ • WakeLock Prevention    │ • Navigation Container │
-└────────────────────┴──────────────────────────┴────────────────────────┘
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│                              TERAAUTO ECOSYSTEM ARCHITECTURE                           │
+├────────────────────┬──────────────────────────┬───────────────────────┬────────────────┤
+│     TeraAuto       │       Tera Mirror        │    FS Tera Mirror     │  TeraControl   │
+│   [Media Hub]      │   [Standard Mirroring]   │  [Fullscreen Mirror]  │ [Wheel IPC]    │
+│                    │                          │                       │                │
+│ • Local Audio/Video│ • Phone Screen Cast      │ • Native CarAppService│ • Wheel Keys   │
+│ • YouTube + AdBlock│ • Automotive Display Sync│ • Fullscreen 16:9 / UW│ • Next / Prev  │
+│ • IPTV M3U/M3U8    │ • Touch Input Injection  │ • Zero Letterboxing   │ • Play / Pause │
+│ • Web & AI Whisper │ • WakeLock Prevention    │ • Navigation Hub      │ • Messenger IPC│
+└────────────────────┴──────────────────────────┴───────────────────────┴────────────────┘
 ```
 
-1. **TeraAuto (Core Multimedia Engine):**
+1. **TeraAuto (Core Multimedia Engine - `com.terabithia.teraauto`):**
    - High-performance media playback powered by VLC and ExoPlayer backends.
    - Integrated YouTube engine with built-in ad-blocking and SponsorBlock integration.
    - IPTV support with EPG program guides, playlist management, and favorites.
@@ -39,6 +39,37 @@ TeraAuto registers three standalone, distinct application entry points into the 
 3. **FS Tera Mirror (Full-Screen Navigation Mirroring):**
    - Implements `androidx.car.app.CarAppService` under the `androidx.car.app.category.NAVIGATION` category.
    - Bypasses standard Android Auto aspect ratio letterboxing to deliver immersive edge-to-edge mirroring on widescreen and ultra-wide automotive displays.
+4. **TeraControl (Steering Wheel Companion - `com.terabithia.teracontrol`):**
+   - Dedicated foreground `MediaBrowserService` bridging steering wheel media buttons directly into TeraAuto.
+   - Intercepts physical steering wheel buttons (`KEYCODE_MEDIA_NEXT`, `KEYCODE_MEDIA_PREVIOUS`, `KEYCODE_MEDIA_PLAY_PAUSE`, volume, repeat, shuffle) and relays them via Android Messenger IPC.
+   - Signed with the identical cryptographic certificate (`CN=TeraAuto`) to satisfy Android signature-level permission checks.
+
+---
+
+## 🎮 TeraControl: Steering Wheel Integration & IPC
+
+Modern Android Auto head units often route physical steering wheel button events through the primary media browser session. **TeraControl** acts as the dedicated companion bridge:
+
+```
+[ Vehicle Steering Wheel ]
+           │ (CAN-Bus / Bluetooth HID)
+           ▼
+[ Android Auto Head Unit ]
+           │ (MediaSession KeyEvents)
+           ▼
+[ TeraControl (com.terabithia.teracontrol) ]
+   • Foreground MediaBrowserService
+   • MediaSessionCompat Callback
+           │
+           │ (Android Messenger IPC: me.aap.fermata.action.ControlService)
+           ▼
+[ TeraAuto (com.terabithia.teraauto) ]
+   • FermataMediaService Binder
+   • VLC / ExoPlayer Engine Controls
+```
+
+- **Cryptographic Trust:** Both `TeraAuto` and `TeraControl` are compiled and signed using `keystore/teraauto.jks`. Android's package manager grants signature-level IPC permissions and mutual visibility without security prompts.
+- **Bi-directional State Sync:** TeraControl maintains playback state, title, and artwork notification, allowing the vehicle's instrument cluster (gauge cluster display) to show currently playing tracks.
 
 ---
 
@@ -63,7 +94,7 @@ Google restricts Android Auto launchers by default to approved Play Store applic
 4. Check **Unknown sources** (enables sideloaded car apps).
 5. Ensure **Wireless Android Auto** is enabled if using wireless adapters.
 
-### 2. Zero-Touch Automated Installer (Recommended)
+### 2. Zero-Touch Automated Installer (Installs TeraAuto + TeraControl)
 You do **not** need to manually run commands or toggle hidden Android 13/14+ settings.
 
 **On Windows:**
@@ -77,9 +108,9 @@ Or run via PowerShell:
 ```
 
 **What the zero-touch script automates:**
-- Pushes the signed APK to `/data/local/tmp/teraauto.apk`.
-- Spoofs Google Play Store installation (`pm install -i "com.android.vending"`), causing Android Auto to immediately trust all 3 apps without restrictions.
-- Automatically bypasses Android 13/14+ Restricted Settings via `appops set com.terabithia.teraauto ACCESS_RESTRICTED_SETTINGS allow`.
+- Pushes and installs both `release/TeraAuto-v2.0.2-arm64-signed.apk` and `release/TeraControl-v2.0.2-signed.apk`.
+- Spoofs Google Play Store installation (`pm install -i "com.android.vending"`), causing Android Auto to immediately trust all apps without restrictions.
+- Automatically bypasses Android 13/14+ Restricted Settings via `appops set <package> ACCESS_RESTRICTED_SETTINGS allow`.
 - Grants `SYSTEM_ALERT_WINDOW`, `PROJECT_MEDIA`, `MANAGE_EXTERNAL_STORAGE`, and media runtime permissions.
 - Enables the Accessibility Service in Android Secure Settings (`com.terabithia.teraauto/me.aap.fermata.auto.AccessibilityEventDispatcherService`) so screen mirroring touch injection works out-of-the-box.
 
@@ -110,34 +141,39 @@ Test TeraAuto directly on your PC screen using Google's Desktop Head Unit emulat
 - **Apktool 3.0+**
 - **Android SDK Build-Tools 35.0.0+** (`aapt2`, `zipalign`, `apksigner`)
 
-### Windows PowerShell
+### Build TeraAuto (Main Engine)
 ```powershell
-# Run the automated build, alignment, and signing pipeline
+# Windows PowerShell
 .\scripts\build_teraauto.ps1
-```
 
-### Linux / macOS (Bash)
-```bash
-chmod +x scripts/build_teraauto.sh
+# Linux / macOS (Bash)
 ./scripts/build_teraauto.sh
 ```
+Output: `release/TeraAuto-v2.0.2-arm64-signed.apk`
 
-The compiled, aligned, and signed APK will be output to:
-`release/TeraAuto-v2.0.2-arm64-signed.apk`
+### Build TeraControl (Steering Wheel Companion)
+```powershell
+# Windows PowerShell
+.\scripts\build_teracontrol.ps1
+
+# Linux / macOS (Bash)
+./scripts/build_teracontrol.sh
+```
+Output: `release/TeraControl-v2.0.2-signed.apk`
 
 ---
 
 ## 🔐 Keystore & Signing Details
 
-The release APK is signed with all 3 Android signature schemes:
+Both release APKs are signed with the **exact same** cryptographic keystore (`keystore/teraauto.jks`) using all 3 Android signature schemes:
 - **v1 (JAR Signature Scheme)**: Compatibility with legacy runtime verifiers.
 - **v2 (APK Signature Scheme v2)**: Fast whole-file verification.
 - **v3 (APK Signature Scheme v3)**: Key rotation and modern Android platform support.
 
 Signature Certificate:
 - **CN:** `TeraAuto`, **OU:** `Automotive`, **O:** `Terabithia`, **C:** `TR`
+- **Certificate SHA-256 Digest:** `D7:F6:94:11:22:52:78:92:56:42:A7:CD:89:CF:57:34:5C:BF:35:C3:28:CB:2C:0E:BF:24:45:74:2F:DF:F2:BB`
 - **Key Algorithm:** RSA 2048-bit
-- **Digest Algorithm:** SHA-256 with RSA
 
 ---
 

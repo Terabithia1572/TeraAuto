@@ -1,0 +1,16 @@
+version: 3.0.3
+apkFileName: TeraControl-v2.0.2-signed.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 23
+  targetSdkVersion: 34
+versionInfo:
+  versionCode: 268
+  versionName: 2.0.2
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc
+- png
