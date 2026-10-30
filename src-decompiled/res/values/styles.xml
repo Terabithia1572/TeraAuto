@@ -123,19 +123,19 @@
         <item name="android:textColorHint">#a1a7b3</item>
         <item name="android:textColorTertiary">#f6f4fa</item>
         <item name="alpha">1.0</item>
-        <item name="boxStrokeColor">#804e6aa2</item>
+        <item name="boxStrokeColor">#8000e5ff</item>
         <item name="colorAccent">?colorSecondaryVariant</item>
         <item name="colorControlActivated">?colorOnPrimary</item>
         <item name="colorControlNormal">?boxStrokeColor</item>
-        <item name="colorOnPrimary">#4e6aa2</item>
+        <item name="colorOnPrimary">#00e5ff</item>
         <item name="colorOnPrimarySurface">?colorOnPrimary</item>
         <item name="colorOnSecondary">?colorOnPrimary</item>
         <item name="colorOnSurface">?colorOnPrimary</item>
         <item name="colorPrimary">?colorPrimaryDark</item>
-        <item name="colorPrimaryDark">#1c1b1f</item>
+        <item name="colorPrimaryDark">#11141a</item>
         <item name="colorPrimarySurface">#1f1331</item>
         <item name="colorSecondary">?android:colorBackground</item>
-        <item name="colorSecondaryVariant">#a11477</item>
+        <item name="colorSecondaryVariant">#00b4d8</item>
         <item name="colorSurface">?colorPrimary</item>
         <item name="rippleColor">?colorAccent</item>
     </style>
@@ -162,7 +162,7 @@
         <item name="colorPrimaryDark">#445d8f</item>
         <item name="colorPrimarySurface">?colorOnPrimary</item>
         <item name="colorSecondary">?android:colorBackground</item>
-        <item name="colorSecondaryVariant">#a11477</item>
+        <item name="colorSecondaryVariant">#00b4d8</item>
         <item name="colorSurface">?colorPrimary</item>
         <item name="popupMenuStyle">@style/AppTheme.Light.PopupMenuStyle</item>
         <item name="rippleColor">?colorAccent</item>
@@ -199,7 +199,7 @@
         <item name="colorPrimaryDark">#3d2562</item>
         <item name="colorPrimarySurface">#1f1331</item>
         <item name="colorSecondary">?android:colorBackground</item>
-        <item name="colorSecondaryVariant">#a11477</item>
+        <item name="colorSecondaryVariant">#00b4d8</item>
         <item name="colorSurface">?colorPrimary</item>
         <item name="rippleColor">?colorAccent</item>
     </style>

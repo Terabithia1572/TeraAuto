@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="108.0dp" android:width="108.0dp" android:viewportWidth="108.0" android:viewportHeight="108.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Full-Screen 4 Expansion Arrows -->
+    <!-- Top Left -->
+    <path android:strokeColor="#e056fd" android:strokeWidth="2.5" android:strokeLineCap="round" android:strokeLineJoin="round"
+          android:pathData="M24,34 L24,24 L34,24 M24,24 L35,35" />
+    <!-- Top Right -->
+    <path android:strokeColor="#e056fd" android:strokeWidth="2.5" android:strokeLineCap="round" android:strokeLineJoin="round"
+          android:pathData="M74,24 L84,24 L84,34 M84,24 L73,35" />
+    <!-- Bottom Left -->
+    <path android:strokeColor="#e056fd" android:strokeWidth="2.5" android:strokeLineCap="round" android:strokeLineJoin="round"
+          android:pathData="M24,74 L24,84 L34,84 M24,84 L35,73" />
+    <!-- Bottom Right -->
+    <path android:strokeColor="#e056fd" android:strokeWidth="2.5" android:strokeLineCap="round" android:strokeLineJoin="round"
+          android:pathData="M84,74 L84,84 L74,84 M84,84 L73,73" />
+    <!-- Center Mirrored Screen -->
+    <path android:fillColor="#25e056fd" android:strokeColor="#ffffff" android:strokeWidth="2.2"
+          android:pathData="M38,36 C38,34 40,32 42,32 L66,32 C68,32 70,34 70,36 L70,72 C70,74 68,76 66,76 L42,76 C40,76 38,74 38,72 Z" />
+    <!-- Projection Play Triangle inside FS Mirror -->
+    <path android:fillColor="#00e5ff"
+          android:pathData="M50,48 L62,54 L50,60 Z" />
+</vector>

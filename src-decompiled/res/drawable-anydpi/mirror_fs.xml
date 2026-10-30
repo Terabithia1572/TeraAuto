@@ -2,6 +2,6 @@
 <adaptive-icon
   xmlns:android="http://schemas.android.com/apk/res/android">
     <background android:drawable="@drawable/mirror_fs_bg" />
-    <foreground android:drawable="@drawable/mirror_s" />
-    <monochrome android:drawable="@drawable/mirror_s" />
+    <foreground android:drawable="@drawable/mirror_fs_s" />
+    <monochrome android:drawable="@drawable/mirror_fs_s" />
 </adaptive-icon>
