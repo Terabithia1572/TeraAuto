@@ -150,6 +150,42 @@ Or run via PowerShell:
 
 ---
 
+## 🔧 Head Unit Troubleshooting & Android 14 Sideload Requirements
+
+### Why Media Services Appear While Video/Mirroring Apps Are Hidden
+On real automotive head units (e.g. **TLink**, **ZLink**, **TS10**, OEM Android Auto), you may notice that **Tera Media Service** and **TeraControl** appear immediately in the car launcher, whereas **TeraAuto**, **Tera Mirror**, and **FS Tera Mirror** are hidden.
+
+**The Cause (Android 14 Projection Restrictions):**
+- **Media Services (`MediaBrowserService`):** Android Auto treats media/audio browser services as standard audio providers; Android Auto permits them even when installed through basic sideloading.
+- **Video & Mirroring Modules (`CarService`, `MirrorService`, `MirrorServiceFS`):** Google enforces strict projection restrictions on video, screen mirroring, and navigation apps. On Android 14, standard file manager installations tag the APK with an untrusted installer package. Unless the package installer session is spoofed as the official Google Play Store (`com.android.vending`), Android Auto quietly suppresses video projection and custom CarApp services from the in-car launcher.
+
+### Solution: Install via KingInstaller (10-Second Method)
+For vehicles running Android 14 phones, use **KingInstaller** (or **AA-Tweaker**) to install with Play Store session spoofing enabled:
+
+1. **Push APKs to your phone:**
+   Double-click `Prepare-Phone-Sideload.bat` or run:
+   ```powershell
+   .\scripts\prepare_phone_sideload.ps1
+   ```
+   Both signed APKs will be transferred directly to `/sdcard/Download/` on your phone.
+2. **Open KingInstaller on your phone:**
+   - Tap **Select file** and navigate to your `Downloads` directory.
+   - Select `TeraAuto-v2.0.2-arm64-signed.apk`.
+   - Ensure **King Mode** (or **Install as Google Play Store session**) is **CHECKED**.
+   - Tap **Install as King** / **Install**.
+   - Repeat the process for `TeraControl-v2.0.2-signed.apk`.
+3. **Verify Android Auto Settings:**
+   - Open Android Auto settings on your phone > Developer settings > ensure **Unknown sources** is enabled.
+4. **Plug into your Car Head Unit:**
+   - TeraAuto, Tera Mirror, and FS Tera Mirror will now appear alongside Tera Media Service with full navigation, touch injection, and zero letterboxing!
+
+> [!NOTE]
+> **TeraControl Uninstall Dialog Fixed (Phase 14):**
+> Upstream Fermata contained legacy update routines that erroneously prompted to uninstall the control companion package. In TeraAuto Phase 14, all uninstallation intents (`UNINSTALL_PACKAGE`, `DELETE`, and package lookup triggers) have been completely eradicated, ensuring seamless startup without unwanted system dialogs or "Öğe yok" (No items) errors.
+
+
+---
+
 ## 🖥️ PC Android Auto Desktop Head Unit (DHU) Testing
 
 Test TeraAuto directly on your PC screen using Google's Desktop Head Unit emulator:

@@ -679,42 +679,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {v0}, Lme/aap/fermata/ui/activity/MainActivity;->uninstallControl()Lme/aap/utils/async/FutureSupplier;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object v1
-
-    .line 15
-    new-instance v2, Lk7;
-
-    .line 16
-    .line 17
-    const/16 v3, 0xd
-
-    .line 18
-    .line 19
-    invoke-direct {v2, v3, p0, v0}, Lk7;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
-
-    .line 20
-    .line 21
-    .line 22
-    const/4 p0, 0x1
-
-    .line 23
-    new-array p0, p0, [Ljava/lang/Runnable;
-
-    .line 24
-    .line 25
-    const/4 v0, 0x0
-
-    .line 26
-    aput-object v2, p0, v0
-
-    .line 27
-    .line 28
-    invoke-interface {v1, p0}, Lme/aap/utils/async/FutureSupplier;->thenRun([Ljava/lang/Runnable;)Lme/aap/utils/async/FutureSupplier;
+    invoke-direct {p0, v0}, Lme/aap/fermata/ui/activity/MainActivityDelegate;->lambda$checkUpdates$6(Lme/aap/fermata/ui/activity/MainActivity;)V
 
     .line 29
     .line 30

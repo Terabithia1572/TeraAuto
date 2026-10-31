@@ -954,68 +954,10 @@
 .end method
 
 .method private static synthetic lambda$uninstallControl$2(Ljava/lang/String;)Landroid/content/Intent;
-    .locals 3
+    .locals 1
 
-    .line 1
-    new-instance v0, Landroid/content/Intent;
+    const/4 v0, 0x0
 
-    .line 2
-    .line 3
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    .line 4
-    .line 5
-    const-string v2, "package:"
-
-    .line 6
-    .line 7
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 8
-    .line 9
-    .line 10
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object p0
-
-    .line 17
-    invoke-static {p0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
-
-    .line 18
-    .line 19
-    .line 20
-    move-result-object p0
-
-    .line 21
-    const-string v1, "android.intent.action.UNINSTALL_PACKAGE"
-
-    .line 22
-    .line 23
-    invoke-direct {v0, v1, p0}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
-
-    .line 24
-    .line 25
-    .line 26
-    const-string p0, "android.intent.extra.RETURN_RESULT"
-
-    .line 27
-    .line 28
-    const/4 v1, 0x1
-
-    .line 29
-    invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
-
-    .line 30
-    .line 31
-    .line 32
     return-object v0
 .end method
 
@@ -1368,19 +1310,8 @@
 .method public static synthetic n()Landroid/content/Intent;
     .locals 1
 
-    .line 1
-    const-string v0, "com.terabithia.teracontrol"
+    const/4 v0, 0x0
 
-    .line 2
-    .line 3
-    invoke-static {v0}, Lme/aap/fermata/ui/activity/MainActivity;->lambda$uninstallControl$2(Ljava/lang/String;)Landroid/content/Intent;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
     return-object v0
 .end method
 
@@ -2546,7 +2477,7 @@
 .end method
 
 .method public uninstallControl()Lme/aap/utils/async/FutureSupplier;
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -2555,54 +2486,9 @@
         }
     .end annotation
 
-    .line 1
-    const-string v0, "com.terabithia.teracontrol"
-
-    .line 2
-    .line 3
-    invoke-static {p0, v0}, Lme/aap/utils/misc/MiscUtils;->isPackageInstalled(Landroid/content/Context;Ljava/lang/String;)Z
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    if-nez v0, :cond_0
-
-    .line 8
-    .line 9
     invoke-static {}, Lme/aap/utils/async/Completed;->completedVoid()Lme/aap/utils/async/FutureSupplier;
 
-    .line 10
-    .line 11
-    .line 12
-    move-result-object p0
+    move-result-object v0
 
-    .line 13
-    return-object p0
-
-    .line 14
-    :cond_0
-    new-instance v0, Lms0;
-
-    .line 15
-    .line 16
-    const/4 v1, 0x7
-
-    .line 17
-    invoke-direct {v0, v1}, Lms0;-><init>(I)V
-
-    .line 18
-    .line 19
-    .line 20
-    invoke-virtual {p0, v0}, Lme/aap/utils/ui/activity/ActivityBase;->startActivityForResult(Lme/aap/utils/function/Supplier;)Lme/aap/utils/async/FutureSupplier;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object p0
-
-    .line 24
-    return-object p0
+    return-object v0
 .end method
